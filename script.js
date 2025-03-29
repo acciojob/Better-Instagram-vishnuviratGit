@@ -2,11 +2,11 @@ let parent=document.getElementById("parent");
 let draggedElement=null;
 parent.addEventListener("dragstart",(event)=>{
 		draggedElement=event.target;
-	    event.target.style.opacity="0.5";
+	    //event.target.style.opacity="0.5";
 });
-parent.addEventListener("dragend", (event)=>{
+/*parent.addEventListener("dragend", (event)=>{
 	  event.target.style.opacity="1";
-});
+});*/
 parent.addEventListener("dragover", (event)=>{
 		event.preventDefault();
 });
